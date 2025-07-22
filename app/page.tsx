@@ -81,7 +81,7 @@ export default function Portfolio() {
 
   const downloadResume = () => {
     // Replace with your actual resume URL
-    const resumeUrl = "https://drive.google.com/uc?export=download&id=1your-actual-resume-file-id"
+    const resumeUrl = "./Nithin_CV.pdf"
     window.open(resumeUrl, "_blank", "noopener,noreferrer")
   }
 
@@ -234,9 +234,17 @@ export default function Portfolio() {
               animate={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
               className="flex items-center gap-2 sm:gap-3"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-sm sm:text-lg">N</span>
-              </div>
+              {/* <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-sm sm:text-lg">02</span>
+              </div> */}
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl overflow-hidden shadow-lg">
+  <img
+    src="/download.jpeg" // <-- replace with your image path
+    alt="Step Icon"
+    className="w-full h-full object-cover"
+  />
+</div>
+
               <div className="hidden xs:block sm:block">
                 <h1 className="font-semibold text-sm sm:text-lg text-slate-100">Nithin</h1>
                 <p className="text-xs text-slate-400 hidden sm:block">UI/UX Designer & React Developer</p>
